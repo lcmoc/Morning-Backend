@@ -21,7 +21,7 @@ public class StudentController {
             this.studentService = studentService;
         }
 
-        @CrossOrigin(origins = "https://morning-b5e3d.web.app/")
+        @CrossOrigin(origins = {"https://morning-b5e3d.web.app/", "http://localhost:3000/"})
         @GetMapping("/students")
         public ResponseEntity<List<StudentEntity>> getUsers() {
             return ResponseEntity
