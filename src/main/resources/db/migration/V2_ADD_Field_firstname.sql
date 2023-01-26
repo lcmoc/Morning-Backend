@@ -1,0 +1,2 @@
+ALTER TABLE student
+ADD COLUMN firstname VARCHAR(15) AFTER email;
